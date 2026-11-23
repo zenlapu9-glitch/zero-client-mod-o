@@ -1,0 +1,41 @@
+ZERO CLIENT 0.1.0 — BUILD STATUS
+Target: Minecraft Java 1.21.11 / Fabric / Java 21+
+Build toolchain declared: Fabric Loom 1.19.4 / Gradle 9.9.1 / Fabric API 0.141.1+1.21.11
+
+Implemented source modules:
+- FPS Counter
+- Coordinates HUD
+- Direction HUD
+- Ping Display
+- Keystrokes HUD
+- Toggle Sprint
+- Zoom
+
+Project deliverables:
+- Java source project: CREATED
+- Fabric metadata: CREATED
+- English keybind names: CREATED
+- Gradle build scripts/configuration: CREATED
+- README and build report: CREATED
+
+Verification:
+- Java runtime available in workspace: 21.0.12
+- fabric.mod.json syntax: VALIDATED
+- en_us.json syntax: VALIDATED
+- ZIP archive integrity: PASSED (`unzip -t` reports no errors)
+- Gradle compilation: NOT RUN — `gradle` executable is not installed (command returned exit 127)
+- Dependency resolution: NOT RUN
+- Installable remapped JAR: NOT PRODUCED
+- Fabric Loader launch test: NOT RUN
+- Zalith Launcher 2 / Android runtime test: NOT RUN
+
+Important limitations:
+This is an initial source release, not the complete feature set in the master prompt.
+KillAura, Aim Assist, TriggerBot, Auto Clicker, Reach, Velocity, automated combat,
+movement exploits, ESP/chams/X-ray, automated inventory modules, a drag-and-drop HUD
+editor, profiles, and advanced module settings are not implemented. They are not exposed
+as fake toggles. No anti-cheat bypass, stealth, or evasion code is included.
+
+Do not install the ZIP in the mods folder. Only a successfully built remapped Fabric JAR
+can be installed as a mod. Android/Zalith compatibility remains unverified until the
+compiled artifact is launched in the user's actual instance.
